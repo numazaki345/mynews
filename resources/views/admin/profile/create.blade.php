@@ -16,7 +16,7 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2" for="title">氏名</label>
+                        <label class="col-md-2" for="title">名前</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                         </div>
@@ -24,9 +24,11 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                            <input type="radio"  name="gender" value="{{ old('gender') }}">男性
+                            <input type="radio"  name="gender" value='mele' {{ old('gender') == 'mele' ? 'checked' : '' }}>
+                            <label for="mele">男性</label>
                             <br>
-                            <input type="radio"  name="gender" value="{{ old('gender') }}">女性
+                            <input type="radio"  name="gender" value='female' {{ old('gender') == 'female' ? 'checked' : '' }}>
+                            <label for="female">女性</label>
                         </div>
                     </div>
                     <div class="form-group row">
