@@ -24,10 +24,10 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                            <input type="radio"  name="gender" value='mele' {{ old('gender') == 'mele' ? 'checked' : '' }}>
+                            <input type="radio"  name="gender" value='男性' {{ old('gender') == '男性' ? 'checked' : '' }}>
                             <label for="mele">男性</label>
                             <br>
-                            <input type="radio"  name="gender" value='female' {{ old('gender') == 'female' ? 'checked' : '' }}>
+                            <input type="radio"  name="gender" value='女性' {{ old('gender') == '女性' ? 'checked' : '' }}>
                             <label for="female">女性</label>
                         </div>
                     </div>
