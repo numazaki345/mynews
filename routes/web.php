@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function () {
+  return view('welcome');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,4 +38,4 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'NewsController@index');
+// Route::get('/', 'NewsController@index');
